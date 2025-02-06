@@ -9,7 +9,7 @@ test.describe("Login /Logout flow", () => {
 
     })
     test("Naviage secenrio", async( { page } ) => {
-        expect(await page.getByAltText('Website for automation practice')).toBeVisible()
+        expect(page.getByAltText('Website for automation practice')).toBeVisible()
         await page.getByText('Test Cases').first().click()
         const testcase1 = await page.locator('a[data-toggle="collapse"] u').first().innerText()
         expect(testcase1).toEqual('Test Case 1: Register User')
