@@ -1,0 +1,17 @@
+{
+  "name": "playwrightautomation",
+  "version": "1.0.0",
+  "description": "Automation with Playwright",
+  "license": "ISC",
+  "author": "Vinathi Malisetty",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "tests:e2e" : "playwright test --config=e2e.config.ts --project=Chromium" 
+    
+  },
+  "dependencies": {
+    "@playwright/test": "^1.49.1",
+    "prettier": "^3.4.2"
+  }
+}
